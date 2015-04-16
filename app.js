@@ -14,6 +14,10 @@ angular.module('myApp', ['schemaForm', 'ngSchemaFormRepeatType'])
         $scope.$broadcast('schemaFormValidate');
         if ($scope.myForm.$valid) {
             
+            
+            delete $scope.model.password_confirm;
+            delete $scope.model.email_confirm;
+            
             console.log($scope.model);
             
         }

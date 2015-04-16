@@ -1,17 +1,12 @@
 angular.module('ngSchemaFormRepeatType', ['schemaForm'])
 
-.config(['schemaFormDecoratorsProvider', function(schemaFormDecoratorsProvider){
+.config(['schemaFormDecoratorsProvider', 'schemaFormProvider', function(schemaFormDecoratorsProvider, schemaFormProvider){
 	schemaFormDecoratorsProvider.addMapping(
 		'bootstrapDecorator',
-		'password-confirm',
+		'password_confirm',
 		'password-confirm.html'
 	);
-
-	schemaFormDecoratorsProvider.addMapping(
-		'bootstrapDecorator',
-		'unique-username',
-		'unique-username.html'
-	);
+   
 }])
 .run(['$templateCache', function($templateCache){
 	// Get and modify default templates
@@ -22,10 +17,6 @@ angular.module('ngSchemaFormRepeatType', ['schemaForm'])
 		tmpl.replace('type="{{form.type}}"', 'type="password" password-confirm="{{form.condition}}"').replace(/schemaError/g, 'customError')
 	);
 
-	$templateCache.put(
-		'unique-username.html',
-		tmpl.replace('type="{{form.type}}"', 'type="text" unique-username').replace(/schemaError/g, 'customError')
-	);
 }])
         
 .directive('passwordConfirm', function(){

@@ -8,6 +8,18 @@
 				"minLength": 2,
 				"maxLength": 32,
 				"required": true
+			},
+            "name": {
+                "type": "string",
+                "title": "Name",
+                "required": true
+            },
+			"email": {
+				"title": "Email",
+				"type": "string",
+				"minLength": 2,
+				"maxLength": 32,
+				"required": true
 			}
 		}
       },
@@ -19,9 +31,21 @@
         },
 		{
             "key": "password_confirm",
-            "type": "password-confirm",
+            "type": "password_confirm",
             "title": "Confirm Password",
             "condition": "model.password"
+        },
+        "name",
+		{
+            "key": "email",
+            "title": "Email",
+            "type": "password"
+        },
+		{
+            "key": "email_confirm",
+            "type": "password_confirm",
+            "title": "Confirm Email",
+            "condition": "model.email"
         },
         {
           "type": "submit",
