@@ -1,0 +1,28 @@
+{
+"name": "angular-schema-form-user-registration",
+"version": "0.0.1",
+"authors": [
+"plong0 <pat@technaturally.com>"
+],
+"description": "User Registration demo using angular-schema-form",
+"keywords": [
+"angularjs",
+"angular-schema-form",
+"user-registration",
+"custom-form-type-validation",
+"asynchronous-validation"
+],
+"license": "MIT",
+"ignore": [
+"**/.*",
+"node_modules",
+"bower_components",
+"test",
+"tests"
+],
+"dependencies": {
+"angular": "~1.3.14",
+"angular-schema-form": "~0.7.13",
+"bootstrap": "~3.3.2"
+}
+}

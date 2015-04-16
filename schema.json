@@ -1,0 +1,32 @@
+{
+    "schema": {
+		"type": "object",
+		"properties": {
+			"password": {
+				"title": "Password",
+				"type": "string",
+				"minLength": 2,
+				"maxLength": 32,
+				"required": true
+			}
+		}
+      },
+    "form": [
+		{
+            "key": "password",
+            "title": "Password",
+            "type": "password"
+        },
+		{
+            "key": "password_confirm",
+            "type": "password-confirm",
+            "title": "Confirm Password",
+            "condition": "model.password"
+        },
+        {
+          "type": "submit",
+          "style": "btn-info",
+          "title": "OK"
+        }
+    ]
+}
