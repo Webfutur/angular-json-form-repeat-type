@@ -31,7 +31,8 @@
         },
 		{
             "key": "password_confirm",
-            "type": "password_confirm",
+            "type": "repeated",
+            "format": "password",
             "title": "Confirm Password",
             "condition": "model.password"
         },
@@ -39,11 +40,12 @@
 		{
             "key": "email",
             "title": "Email",
-            "type": "password"
+            "type": "email"
         },
 		{
             "key": "email_confirm",
-            "type": "password_confirm",
+            "type": "repeated",
+            "format": "email",
             "title": "Confirm Email",
             "condition": "model.email"
         },

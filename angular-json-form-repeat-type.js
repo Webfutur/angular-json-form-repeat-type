@@ -3,8 +3,8 @@ angular.module('ngSchemaFormRepeatType', ['schemaForm'])
 .config(['schemaFormDecoratorsProvider', 'schemaFormProvider', function(schemaFormDecoratorsProvider, schemaFormProvider){
 	schemaFormDecoratorsProvider.addMapping(
 		'bootstrapDecorator',
-		'password_confirm',
-		'password-confirm.html'
+		'repeated',
+		'repeated.html'
 	);
    
 }])
@@ -13,8 +13,8 @@ angular.module('ngSchemaFormRepeatType', ['schemaForm'])
 	var tmpl = $templateCache.get('directives/decorators/bootstrap/default.html');
 
 	$templateCache.put(
-		'password-confirm.html',
-		tmpl.replace('type="{{form.type}}"', 'type="password" password-confirm="{{form.condition}}"').replace(/schemaError/g, 'customError')
+		'repeated.html',
+		tmpl.replace('type="{{form.type}}"', 'type="{{form.format}}" password-confirm="{{form.condition}}"').replace(/schemaError/g, 'customError')
 	);
 
 }])
@@ -37,7 +37,7 @@ angular.module('ngSchemaFormRepeatType', ['schemaForm'])
 			ngModel.$validators.match = function(modelValue, viewValue){
 				var value = modelValue || viewValue;
 				if(value != scope.passwordConfirm){
-					error = { code: 'match', message: 'Passwords do not match.' };
+					error = { code: 'match', message: 'No match.' };
 					return false;
 				}
 				delete error;
