@@ -1,0 +1,44 @@
+{
+  "name": "angular-schema-form-repeat",
+  "version": "0.1.0",
+  "description": "Manage an input with repeat attribute",
+  "main": "dist/schema-form-repeat.min.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-header": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webfutur/angular-schema-form-repeat.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "schema",
+    "form",
+    "repeat"
+  ],
+  "author": {
+    "name": "G. Pedelagrabe",
+    "email": "gpedelagrabe@gmail.com",
+    "url": ""
+  },
+  "contributors": [{
+    "name": "Kevin Lot",
+    "email": "mail@kevinlot.me",
+    "url": "kevinlot.me"
+  }],
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Webfutur/angular-schema-form-repeat/issues"
+  },
+  "homepage": "https://github.com/Webfutur/angular-schema-form-repeat#readme"
+}
