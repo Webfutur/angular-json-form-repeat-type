@@ -1,7 +1,7 @@
 {
   "name": "angular-schema-form-repeat",
   "version": "0.1.0",
-  "description": "description",
+  "description": "Manage an input with repeat attribute",
   "main": "dist/schema-form-repeat.min.js",
   "dependencies": {
     "gulp": "^3.9.0",
