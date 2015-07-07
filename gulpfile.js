@@ -1,8 +1,5 @@
 var gulp = require('gulp');
 
-var addStream = require('add-stream');
-var angularTemplatecache = require('gulp-angular-templatecache');
-var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 var header = require('gulp-header');
 var rename = require('gulp-rename');
