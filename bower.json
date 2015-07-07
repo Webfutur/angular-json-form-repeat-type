@@ -22,7 +22,7 @@
     "repeat"
   ],
   "main": "dist/schema-form-repeat.min.js",
-  "license": "GPLv2",
+  "license": "GPL-2.0",
   "ignore": [
     "**/.*",
     "node_modules",
